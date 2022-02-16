@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>App</title>
+    <script>
+        window.opener.postMessage({
+            username: '{{username}}',
+            accessToken: '{{accessToken}}',
+        }, '*')
+    </script>
+
+</head>
+
+<body>
+    <div>
+        <h1>
+            Authorization successful. Please wait...
+        </h1>
+    </div>
+</body>
+
+</html>

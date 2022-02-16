@@ -24,4 +24,17 @@ export class AuthService {
       access_token: this.jwtService.sign(payload),
     };
   }
+
+  githubLogin(user: any) {
+    if (!user) {
+      return {
+        message: 'No user from github',
+      };
+    }
+
+    return {
+      message: 'User information from github',
+      user,
+    };
+  }
 }
